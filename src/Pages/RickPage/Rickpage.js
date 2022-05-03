@@ -30,6 +30,12 @@ export default function Rickpage() {
                     <Box sx={{mx:4,mb:2}}>
                         <Search handleSearch={handleSearch} />
                     </Box>
+                    <Box sx={{mx:4}}>
+                        <Filter
+                            handleChangeGender={handleChangeGender}
+                            handleChangeStatus={handleChangeStatus}
+                        />
+                    </Box>
                 </Grid>
                 <Grid item xs={12} sm={8} md={9} lg={9} >
                     <Characters characters={characters}/>
