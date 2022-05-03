@@ -57,4 +57,3 @@ const useRickAndMorty = () => {
 };
 
 export default useRickAndMorty;
-

@@ -8,7 +8,7 @@ export default function Characters({ characters }) {
                 characters.map((character) => {
                     return (
                         <Grid
-                            container
+                            item
                             xs={12}
                             sm={6}
                             md={4}

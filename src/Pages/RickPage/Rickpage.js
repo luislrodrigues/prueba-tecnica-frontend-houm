@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Characters from "../../Components/Characters/Characters";
+import Characters from "../../Components/Characters";
 import Search from "../../Components/Search";
+import Paginate from "../../Components/Paginate";
 import Filter from "../../Components/Filter";
 import { CssBaseline, Grid } from "@mui/material";
-import Paginate from "../../Components/Paginate/Paginate";
 import useRickAndMorty from "../../hooks/useRickAndMorty";
 import { Box } from "@mui/system";
 export default function Rickpage() {
@@ -26,7 +26,7 @@ export default function Rickpage() {
         <Grid container sx={{margin:1}}>
         <CssBaseline />
             <Grid container>
-                <Grid items xs={12} sm={4} md={3} lg={3} sx={{mb:2}} >
+                <Grid item xs={12} sm={4} md={3} lg={3} sx={{mb:2}} >
                     <Box sx={{mx:4,mb:2}}>
                         <Search handleSearch={handleSearch} />
                     </Box>

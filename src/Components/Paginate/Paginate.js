@@ -1,5 +1,4 @@
 import { Box, Pagination } from "@mui/material";
-import React from "react";
 
 export default function Paginate({ info, updatePage }) {
     if (info.pages > 1) {
