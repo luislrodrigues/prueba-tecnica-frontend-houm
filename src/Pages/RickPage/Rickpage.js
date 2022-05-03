@@ -26,10 +26,16 @@ export default function Rickpage() {
         <Grid container sx={{margin:1}}>
         <CssBaseline />
             <Grid container>
+                <Grid items xs={12} sm={4} md={3} lg={3} sx={{mb:2}} >
+                    <Box sx={{mx:4,mb:2}}>
+                        <Search handleSearch={handleSearch} />
+                    </Box>
+                </Grid>
                 <Grid item xs={12} sm={8} md={9} lg={9} >
                     <Characters characters={characters}/>
                 </Grid>
             </Grid>
+           
         </Grid>
     );
 }
