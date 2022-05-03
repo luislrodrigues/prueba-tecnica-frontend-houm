@@ -41,7 +41,13 @@ export default function Rickpage() {
                     <Characters characters={characters}/>
                 </Grid>
             </Grid>
-           
+            <Grid item xs={12} >
+                <Paginate
+                    info={info}
+                    characters={characters}
+                    updatePage={updatePage}
+                />
+            </Grid>
         </Grid>
     );
 }
